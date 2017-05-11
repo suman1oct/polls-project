@@ -7,12 +7,6 @@ from .models import Choice,Question
 from django.views import generic
 from django.utils import timezone
 
-"""def index(request):
-	latest_question_list=Question.objects.order_by('-pub_date')[:5]
-
-	template=loader.get_template('polls/index.html')
-	context={ 'latest_question_list':latest_question_list,}
-	return HttpResponse(template.render(context,request))
 
 def detail(request,question_id):
 	question=get_object_or_404(Question,pk=question_id)
