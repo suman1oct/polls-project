@@ -1,0 +1,7 @@
+<form>
+    {% for field in form %}
+        <label class="my_class" for="{{ field.name }}">{{ field.label }}</label>
+        {{ field }}
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
